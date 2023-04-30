@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.card-img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-img.reversed {
+  transform: rotate(180deg);
+}
+
+.card-name {
+  font-size: 14px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circular-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:80px !important; /* 按钮的宽度和高度 */
+  height: 80px !important;
+  border-radius: 50% !important; /* 将按钮形状设置为圆形 */
+  background-color: #6d97c5; /* 按钮的背景颜色 */
+  color: #fff; /* 按钮上文本的颜色 */
+  font-size: 16px; /* 按钮上文本的字体大小 */
+}
+

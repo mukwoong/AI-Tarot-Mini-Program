@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="title">塔罗牌抽卡</view>
+
+  <view class="input-group">
+    <input class="input" placeholder="输入问题" bindinput="onInput" value="{{inputText}}"/>
+    <button class="btn" bindtap="onDraw" disabled="{{!inputText}}">抽卡</button>
+  </view>
+  
+  <view class="cards">
+    <view wx:for="{{cards}}" wx:key="cardName" class="card">
+      <image mode="widthFix" class="card-img {{item.orientation}}" src="{{item.cardImg}}" />
+      <text class="card-name">{{item.cardName}}</text>
+    </view>
+  </view>
+  <view class="msg-group">
+    <button class=".circular-button" bindtap="showMessage" hidden="{{cards.length === 0}}">智能分析</button>
+  </view>
+  
+
+</view>
